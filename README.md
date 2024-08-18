@@ -45,3 +45,4 @@ pip install ogb
 pip install tqdm
 ```
 #### 3. Pre-training the model by contrastive learning (GraphGIM)
+You can download [pretraining data]() and push it into the folder `datasets/pre-training/`.
