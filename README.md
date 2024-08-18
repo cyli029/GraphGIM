@@ -20,3 +20,7 @@ Learning molecular representations is crucial for accurate drug discovery. Using
 ## Environments
 
 #### 1. GPU environment
+CUDA 12.2
+Ubuntu 20.04
+Miniconda conda3
+Python 3.8
