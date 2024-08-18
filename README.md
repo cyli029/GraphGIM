@@ -44,3 +44,4 @@ pip install dgl-1.0.0+cu116
 pip install ogb
 pip install tqdm
 
+#### 3. Pre-training the model by contrastive learning (GraphGIM)
