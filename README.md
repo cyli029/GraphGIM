@@ -27,7 +27,7 @@ Python 3.8
 
 #### 2. create conda environment
 ```bash
-conda create -n GraohGIM python=3.8.10
-source activate GraohGIM
+conda create -n GraphGIM python=3.8.10
+source activate GraphGIM
 
 conda install -c rdkit rdkit
