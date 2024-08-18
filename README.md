@@ -16,3 +16,7 @@ Learning molecular representations is crucial for accurate drug discovery. Using
 
 
 ![framework](./assets/framework.png)
+
+## Environments
+
+#### 1. GPU environment
