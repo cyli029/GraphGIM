@@ -9,4 +9,4 @@ Official PyTorch-based implementation in the paper GraphGIM: Rethinking Molecula
 
 ## 🆕 News
 
-- \[**August 2024**\] We propose [GraphGIM](https://github.com/cyli029/GraphGIM/), a Molecular Graph contrastive Learning Framework.
+- \[**August 2024**\] We propose [GraphGIM](https://github.com/cyli029/GraphGIM), a Molecular Graph Contrastive Learning Framework.
