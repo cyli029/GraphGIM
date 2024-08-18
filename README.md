@@ -24,3 +24,10 @@ CUDA 12.2
 Ubuntu 20.04
 Miniconda conda3
 Python 3.8
+
+#### 2. create conda environment
+```bash
+conda create -n GraohGIM python=3.8.10
+source activate GraohGIM
+
+conda install -c rdkit rdkit
