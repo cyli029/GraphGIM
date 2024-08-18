@@ -20,14 +20,27 @@ Learning molecular representations is crucial for accurate drug discovery. Using
 ## Environments
 
 #### 1. GPU environment
-CUDA 12.2
+CUDA 11.6
 Ubuntu 20.04
 Miniconda conda3
 Python 3.8
 
 #### 2. create conda environment
 ```bash
+# create conda env
 conda create -n GraphGIM python=3.8.10
 source activate GraphGIM
+# install environment
+pip install torch==1.13.0+cu116 torchvision==0.14.0+cu116 torchaudio==0.13.0+cu116 --extra-index-url https://download.pytorch.org/whl/cu116 -i https://pypi.tuna.tsinghua.edu.cn/simple
 
-conda install -c rdkit rdkit
+pip install timm==1.0.3
+pip install tensorboard
+pip install scikit-learn
+pip install pandas
+pip install numpy
+pip install torch-cluster 1.6.0+pt113cu116 torch-scatter torch-sparse torch-spline-conv -f https://pytorch-geometric.com/whl/torch-1.13.1%2Bcu116.html
+pip install torch-geometric==2.5.3
+pip install dgl-1.0.0+cu116
+pip install ogb
+pip install tqdm
+
