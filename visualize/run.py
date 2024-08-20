@@ -11,7 +11,7 @@ import torch.nn as nn
 
 
 model_name = 'resnet18'
-resume_teacher = '../resumes/pretrained-teachers/' + 'IEM' + '.pth'
+resume_teacher = '../resumes/pretrained-model/' + 'IEM' + '.pth'
 resume_teacher_name = 'image3d_teacher'
 image_encoder_teacher = ResumeSingleTeacher(model_name, resume_teacher, resume_teacher_name)
 image3d_path = '../dataset/pre-training/iem-200w/processed/image3d/0/0.png'
