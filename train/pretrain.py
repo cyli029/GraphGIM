@@ -1,10 +1,3 @@
-"""
--*- coding: utf-8 -*-
-@Author: ChaoYiLi
-@description: pretraining
-@tools: @pycharm
-@Time: 2024/05/20 16:17
-"""
 import os
 import glob
 import torch
