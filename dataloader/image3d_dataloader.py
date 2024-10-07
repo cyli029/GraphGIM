@@ -3,7 +3,7 @@ import torch
 import numpy as np
 from PIL import Image
 from utils.splitter import *
-from torchvision impor transfroms
+from torchvision import transforms
 from torch.utils.data import Dataset, DataLoader
 from dataloader.data_utils import check_num_of_image3d
 from dataloader.dual_data_utils import load_image3d_data_list
@@ -72,7 +72,7 @@ class Image3dDataset(Dataset):
                 
             image3d_path_list = tmp_image3d_path_list
             multi_view = len(idx_image3d_list)
-            check_num_of_image3d(image3d_path_list, multi_vew)
+            check_num_of_image3d(image3d_path_list, multi_view)
             #save to cache
             self.log(f'save cache to {cache_data_path}')
             np.savez(cache_data_path,index_list=index_list, image3d_path_list=image3d_path_list, label_list=label_list)
@@ -82,7 +82,7 @@ class Image3dDataset(Dataset):
         view_path_list = self.image3d_path_list[index]
         image3d = [Image.open(view_path_list).convert('RGB') for view_path in view_path_list]
         if self.transform is not None:
-            image3d = list(map(lamba img: self.transform(img).unsqueeze(0), image3d))
+            image3d = list(map(lambda img: self.transform(img).unsqueeze(0), image3d))
             image3d = torch.cat(image3d)
         return image3d
     
