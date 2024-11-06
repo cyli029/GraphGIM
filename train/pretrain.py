@@ -1,3 +1,10 @@
+"""
+-*- coding: utf-8 -*-
+@Author: ChaoYiLi
+@description: pretraining
+@tools: @pycharm
+@Time: 2024/05/20 16:17
+"""
 import os
 import glob
 import torch
@@ -78,7 +85,7 @@ def parse_args():
     parser.add_argument('--seed',type=int,default=42,help='random seed (default:42) to split dataset')
     parser.add_argument('--runseed', type=int, default=2024, help='random seed to run model (default: 2024)')
     parser.add_argument('--epochs', type=int, default=100, help='the train epochs')
-     parser.add_argument('--start_epoch', default=0, type=int,
+    parser.add_argument('--start_epoch', default=0, type=int,
                         help='manual epoch number (useful on restarts) (default: 0)')
     parser.add_argument("--batch", type=int, default=16, help="Batch size")
     parser.add_argument('--imageSize', type=int, default=224, help='the height / width of the input image to network')
@@ -169,7 +176,7 @@ def main(args):
     lr_scheduler = None
     
     #initialize SummaryWriter from tensorboard.
-       tb_writer = SummaryWriter(log_dir=args.tb_dir)
+    tb_writer = SummaryWriter(log_dir=args.tb_dir)
     optimizer_dict = {"optimizer": optimizer}
     #train
     best_loss = np.Inf
