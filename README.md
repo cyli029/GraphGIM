@@ -45,6 +45,6 @@ pip install ogb
 pip install tqdm
 ```
 #### 3. Pre-training the model by contrastive learning (GraphGIM)
-You can download [pretraining data]() and push it into the folder `datasets/pre-training/`.
+You can download [pretraining data]() and push it into the folder `dataset/pre-training/`.
 #### 4. Downstream tasks from MoleculeNet
-You can unzip the file in the folder 'datasets/downstream' and put the files into the folder 'datasets/downstream'
+You can unzip the file in the folder `dataset/downstream/` and put the files into the folder `dataset/downstream/`
