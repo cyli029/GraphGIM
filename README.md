@@ -60,9 +60,9 @@ You can download [feature data](https://pan.quark.cn/s/cbe0b82864b2) and use it 
 The pre-trained teacher model can be accessed in the following table.
 | Name                | Download link                                                | Description                                                  |
 | ------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Pre-trained teacher | [IEM.pth]((https://pan.quark.cn/s/bc69a5d6875a)) | You can download the teacher and put it in the directory: `resumes/pretrained-model/`. |
+| Pre-trained teacher | [IEM.pth](https://pan.quark.cn/s/bc69a5d6875a) | You can download the teacher and put it in the directory: `resumes/pretrained-model/`. |
 
 The pre-trained GraphGIM model can beaccessed in the following table.
 | Name                | Download link                                                | Description                                                  |
 | ------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| best_epoch=9_loss=0.04 | [GraphGIM.pth]((https://pan.quark.cn/s/a0bf837562a1))) | You can download the teacher and put it in the directory: `logs/pretraining/`. |
+| best_epoch=9_loss=0.04 | [GraphGIM.pth](https://pan.quark.cn/s/a0bf837562a1) | You can download the teacher and put it in the directory: `logs/pretraining/`. |
