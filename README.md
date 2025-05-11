@@ -12,7 +12,11 @@ Official PyTorch-based implementation in the paper GraphGIM: Rethinking Molecula
 - \[**August 2024**\] We propose [GraphGIM](https://github.com/cyli029/GraphGIM), a Molecular Graph Contrastive Learning Framework.
 
 ## Abstract
-Learning molecular representations is crucial for accurate drug discovery. Using graphs to represent molecules is a popular solution and many researchers have used contrastive learning (CL) to improve the generalization of molecular graph representations. In this work, we revisit existing graph-based CL methods and find that these methods have limited diversity in the constructed sample pairs, resulting in insufficient performance gains. To alleviate the above challenge, we propose a novel molecular graph CL method via geometry image modeling, called GraphGIM, which enhances the diversity between sample pairs. GraphGIM is pre-trained on 2 million 2D graphs and multi-view 3D geometry images through CL. Furthermore, we find that as the convolutional layers processing the image become deeper, the information of feature maps gradually changes from global molecular-level information to local atomic-level information, which provides chemical information at different scales. Therefore, we propose two variants to further improve the performance of GraphGIM, called GraphGIM-M and GraphGIM-P, which fuse feature maps of different scales in the image using a weighted strategy and a prompt-based strategy, respectively. Extensive experiments show that GraphGIM and its two variants outperform state-of-the-art graph CL methods on eight molecular property prediction benchmarks from MoleculeNet and achieve competitive results with state-of-the-art methods.
+\textbf{Background:} Learning molecular representations is crucial for accurate drug discovery. Using graphs to represent molecules is a popular solution, and many researchers have used contrastive learning to improve the generalization of molecular graph representations. 
+\newline
+\textbf{Results:} In this work, we revisit existing graph-based contrastive methods and find that these methods have limited diversity in the constructed sample pairs, resulting in insufficient performance gains. To alleviate the above challenge, we propose a novel molecular graph contrastive learning method via geometry image modeling, called GraphGIM, which enhances the diversity between sample pairs. GraphGIM is pre-trained on 2 million 2D graphs and multi-view 3D geometry images through contrastive learning. Furthermore, we find that as the convolutional layers process the image becomes deeper, the information of feature maps gradually changes from global molecular-level information (molecular scaffolds) to local atomic-level information (molecular atoms and functional groups), which provides chemical information at different scales. Therefore, we propose two variants of GraphGIM, called GraphGIM-M and GraphGIM-P, which fuse feature maps of different scales in the image using a weighted strategy and a prompt-based strategy, respectively. 
+\newline
+\textbf{Conclusions:} Extensive experiments show that GraphGIM and its two variants outperform state-of-the-art graph contrastive learning methods on eight molecular property prediction benchmarks from MoleculeNet and achieve competitive results with state-of-the-art methods. The code is available at https://github.com/cyli029/GraphGIM.
 
 
 ![framework](./assets/framework.png)
@@ -46,5 +50,6 @@ pip install tqdm
 ```
 #### 3. Pre-training the model by contrastive learning (GraphGIM)
 You can download [pretraining data](https://pan.baidu.com/s/1C8l3_tjd8dFS5oGvXqHcxQ?pwd=pdq4) and push it into the folder `dataset/pre-training/`.
+It is worth noting that you need to pre-process the dataset to ensure data availability.
 #### 4. Downstream tasks from MoleculeNet
 You can unzip the file in the folder `dataset/downstream/` and put the files into the folder `dataset/downstream/`
