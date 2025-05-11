@@ -56,3 +56,8 @@ It is worth noting that you need to pre-process the dataset to ensure data avail
 You can unzip the file in the folder `dataset/downstream/` and put the files into the folder `dataset/downstream/`
 #### 5. Extracting fetures of image3d and graph（w/o aug and aug）
 You can download [feature data](https://pan.quark.cn/s/cbe0b82864b2) and use it for your tasks.
+
+The pre-trained teacher model can be accessed in the following table.
+| Name                | Download link                                                | Description                                                  |
+| ------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Pre-trained teacher | [IEM.pth]([https://1drv.ms/u/s!Atau0ecyBQNTb0DCbVjgADxvcwo?e=580vg5](https://pan.quark.cn/s/bc69a5d6875a)) | You can download the teacher and put it in the directory: `resumes/pretrained-teachers/`. |
