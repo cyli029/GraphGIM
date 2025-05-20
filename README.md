@@ -10,6 +10,7 @@ Official PyTorch-based implementation in the paper GraphGIM: Rethinking Molecula
 ## 🆕 News
 
 - \[**August 2024**\] We propose [GraphGIM](https://github.com/cyli029/GraphGIM), a Molecular Graph Contrastive Learning Framework.
+- \[**May 15 2025**\] Congratulations on our work being accepted by BMC biology.
 
 ## Abstract
 **Background:** Learning molecular representations is crucial for accurate drug discovery. Using graphs to represent molecules is a popular solution, and many researchers have used contrastive learning to improve the generalization of molecular graph representations. 
